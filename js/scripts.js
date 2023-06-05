@@ -40,8 +40,10 @@ window.onload = function () {
     anchor.setAttribute("href", "https://en.wikipedia.org/wiki/Multicoloured_tanager");
     ulElement.after(h2First);
     addElement(body, anchor, "Wikipedia");
-}
 
+    anchor.remove();
+    body.appendChild(anchor);
+}
 /*
 <body>
   <h1>Webpage Recreation Practice</h1>
